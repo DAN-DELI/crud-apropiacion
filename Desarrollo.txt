@@ -81,6 +81,7 @@ input para nombre y textarea
 con boton de editar y eliminar 
 
 
+
 2. Listar tareas (READ)
 ** Al cargar la pagina => Peticion GET 
 
@@ -92,3 +93,16 @@ al añadir la tarea, mostrarla en la lista
 se muestra en lista cuando crea, actualiza o borrar
 
 ** ACTUALIZA SOLO EL NOMBRE y DESCIRP
+
+DAN: 
+- Front
+- POST
+- DELETE
+
+PEPECCION: 
+- PUT Y PATCH
+
+Como: 
+Crea 2 carpetas, una con cada nombre
+Ahi va cada funcion, sin llamarla
+
