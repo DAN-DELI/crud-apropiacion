@@ -21,7 +21,7 @@ body {
   border-radius: 6px;
   max-width: 500px;
   margin: 0 auto 30px auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -34,10 +34,6 @@ body {
   margin-bottom: 5px;
 }
 
-.form-textarea {
-    height: 95%;
-}
-
 .form-input,
 .form-textarea {
   width: 95%;
@@ -47,13 +43,18 @@ body {
   font-size: 14px;
 }
 
+.form-textarea {
+  height: 95%;
+  resize: vertical;
+}
+
 .form-input:focus,
 .form-textarea:focus {
   border-color: #4CAF50;
   outline: none;
 }
 
-/* Botón */
+/* Botón Guardar */
 .btn.submit {
   display: block;
   width: 100%;
@@ -88,10 +89,60 @@ body {
   gap: 10px;
 }
 
+/* Tarjeta de tarea */
 .task {
   background-color: #fff;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.task p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.task small {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+}
+
+/* Botones de acción */
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn.edit {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.edit:hover {
+  background-color: #2980b9;
+}
+
+.btn.delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.delete:hover {
+  background-color: #c0392b;
 }

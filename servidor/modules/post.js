@@ -1,17 +1,21 @@
-//
-// SECCION DE ELEMENTOS
-//
+const API_URL = "http://localhost:3000/todos";
 
-// post.js
-const API_URL = "https://jsonplaceholder.typicode.com/todos";
+// https://jsonplaceholder.typicode.com/todos
 
+async function taskPost(titulo, descripcion) {
+    const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            titulo: titulo,
+            descripcion: descripcion
+        })
 
+    });
 
-//
-// METODOS
-//
+    return await response.json();
+}
 
-
-//
-// SECCION DE ELEMENTOS
-//
+export { taskPost };
